@@ -1,0 +1,110 @@
+html,
+body,
+header,
+#view {
+  height: 100%;
+  overflow: hidden;
+}
+
+#view {
+  background: url("../inc/bg_main.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.scroll {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.more_info_btn {
+  position: fixed;
+  z-index: 999;
+  right: 2vw;
+  bottom: 2vw;
+}
+
+.beta-notice {
+  width: 0;
+  height: 0;
+  border-top: 150px solid #1266f1;
+  border-bottom: 150px solid transparent;
+  border-left: 150px solid transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.beta-notice .inner-text {
+  position: absolute;
+  color: #fbfbfb;
+  font-size: 34px;
+  top: -135px;
+  width: 100px;
+  left: -90px;
+  text-align: center;
+  transform: rotate(45deg);
+  display: block;
+}
+
+.ticket {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fbfbfb;
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.3);
+  margin-bottom: 24px;
+}
+.ticket:before,
+.ticket:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  height: 6px;
+  width: 98%;
+}
+.ticket:before {
+  top: -5px;
+  background: radial-gradient(
+      circle,
+      transparent,
+      transparent 50%,
+      #fbfbfb 50%,
+      #fbfbfb 100%
+    ) -7px -8px/16px 16px repeat-x;
+}
+.ticket:after {
+  bottom: -5px;
+  background: radial-gradient(
+      circle,
+      transparent,
+      transparent 50%,
+      #fbfbfb 50%,
+      #fbfbfb 100%
+    ) -7px -2px/16px 16px repeat-x;
+}
+
+.ticket__content {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.ticket__text {
+  width: 400px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #c6dede;
+  transform: translate(-25px, 25px) rotate(-55deg);
+}
